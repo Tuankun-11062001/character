@@ -9,7 +9,7 @@ const root = document.querySelector("#root");
 ReactDOM.render(
 <BrowserRouter>
     <Routes>
-        <Route path="/" element={<App/>}>
+        <Route path="/character" element={<App/>}>
             <Route index element={<RenderCharacter/>}/>
             <Route path=":characterID" element={<DetailCharacter/>}/>
         </Route>
