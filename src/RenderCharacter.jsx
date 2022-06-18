@@ -15,7 +15,7 @@ export const RenderCharacter = () => {
     <div className='list'>
         {characterData.map(character => (
             <motion.li  variants={variants}  initial="default" whileHover="hover" key={character.id} className='item'>
-                <Link to={`${character.id}`}>
+                <Link to={`/${character.id}`}>
                     <motion.img src={character.photo}/>
                 </Link>
             </motion.li>)
